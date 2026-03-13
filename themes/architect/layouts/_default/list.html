@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">{{ .Title }}</h1>
+
+<ul class="post-list">
+  {{ range .Pages }}
+  <li class="post-item">
+    <div class="post-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+    <div class="post-meta">
+      <time>{{ .Date.Format "January 2, 2006" }}</time> · {{ .ReadingTime }} min read
+    </div>
+    {{ with .Params.summary }}<p class="post-summary">{{ . }}</p>{{ end }}
+    <div>
+      {{ range .Params.tags }}<a href="{{ "tags/" | absURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
