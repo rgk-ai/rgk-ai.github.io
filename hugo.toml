@@ -1,20 +1,20 @@
 baseURL = "https://rgk-ai.github.io/"
 languageCode = "en-us"
-title = "Architecture Notes"
+title = "AI in the Enterprise - Learnings!"
 theme = "architect"
 paginate = 10
 enableRobotsTXT = true
 
 [params]
   author = "Raj"
-  description = "Enterprise Solutions Architect · Bridging Infrastructure, Cloud, and Agentic AI"
-  tagline = "Enterprise Solutions Architect · Bridging Infrastructure, Cloud, and Agentic AI"
+  description = "Solutions Architect · Bridging Infrastructure, Cloud, and Agentic AI"
+  tagline = ""
   linkedin = "https://www.linkedin.com/in/kbrajgopal"
   github = "https://github.com/rgk-ai"
 
 [params.about]
-  headline = "I'm a Solutions Architect with 14+ years enabling GSI, CSP, and Regional partners to design, deploy, and operationalize enterprise infrastructure at scale — now focused on where agentic AI meets enterprise architecture."
-  detail = "I write about MCP, RAG pipelines, cloud AI platforms, and what it actually takes to bring AI into production enterprise environments. NVIDIA Certified (NCA-AIIO, NCA-GENL)."
+  headline = ""
+  detail = ""
 
 [markup]
   [markup.highlight]
