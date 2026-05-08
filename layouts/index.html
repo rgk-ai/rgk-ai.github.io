@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+{{ with .Site.Params.about.headline }}
+<p>{{ . | markdownify }}</p>
+{{ end }}
+
+{{ with .Site.Params.about.detail }}
+<p>{{ . | markdownify }}</p>
+{{ end }}
+
+<h2>Recent Posts</h2>
+
+{{ $sections := slice "ai-architecture" "VMware-Private-AI" "Google-Cloud-A2A" "anthropic-mcp" "Fun-Projects" }}
+{{ $pages := where .Site.RegularPages "Section" "in" $sections }}
+
+{{ range first 10 ($pages.ByDate.Reverse) }}
+<article class="post-summary">
+  <h3>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h3>
+
+  <p>
+    {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+  </p>
+
+  {{ with .Params.description }}
+  <p>{{ . }}</p>
+  {{ else }}
+  <p>{{ .Summary | plainify | truncate 180 }}</p>
+  {{ end }}
+
+  {{ with .Params.tags }}
+  <p>
+    {{ range . }}
+    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+    {{ end }}
+  </p>
+  {{ end }}
+</article>
+{{ end }}
+
+{{ end }}

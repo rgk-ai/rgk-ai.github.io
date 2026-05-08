@@ -5,6 +5,8 @@ draft: false
 tags: ["AI", "Enterprise AI", "GSI", "CSP", "POC", "Partner Enablement", "Production Deployment"]
 categories: ["AI Architecture"]
 description: "After 12 years of partner work and hundreds of POC engagements, the failure pattern is almost always the same — and it has nothing to do with the technology."
+aliases:
+  - "/posts/from-poc-to-production/"
 ---
 
 I have spent 12 years working with Cloud Service Providers, Global System Integrators, and Regional System Integrators, helping them take complex platforms and turn them into production-ready offerings for their customers. During that time, I have been involved in more proof-of-concept engagements than I can count while some succeeded, many did not.

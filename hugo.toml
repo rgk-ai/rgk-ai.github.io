@@ -6,34 +6,60 @@ paginate = 10
 enableRobotsTXT = true
 
 [params]
-  author = "Raj"
-  description = "Solutions Architect · Bridging Infrastructure, Cloud, and Agentic AI"
-  tagline = "If you wish to make an apple pie from scratch 🥧, you must first invent the Universe! 🌌"
-  linkedin = "https://www.linkedin.com/in/kbrajgopal"
-  github = "https://github.com/rgk-ai"
+author = "Raj"
+description = "Solutions Architect · Bridging Infrastructure, Cloud, and Agentic AI"
+tagline = "If you wish to make an apple pie from scratch , you must first invent the Universe! - Carl Sagan (Cosmos)"
+linkedin = "https://www.linkedin.com/in/kbrajgopal"
+github = "https://github.com/rgk-ai"
 
 [params.about]
-  headline = ""
-  detail = ""
+headline = ""
+detail = ""
 
 [markup]
-  [markup.highlight]
-    style = "github"
-    lineNos = false
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+
+[markup.highlight]
+style = "github"
+lineNos = false
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+tag = "tags"
+category = "categories"
 
 [menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 1
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+
+[[menu.main]]
+identifier = "ai-architecture"
+name = "AI Architecture"
+url = "/ai-architecture/"
+weight = 10
+
+[[menu.main]]
+identifier = "vmware-private-ai"
+name = "VMware Private AI"
+url = "/VMware-Private-AI/"
+weight = 20
+
+[[menu.main]]
+identifier = "google-cloud-a2a"
+name = "Google Cloud A2A"
+url = "/Google-Cloud-A2A/"
+weight = 30
+
+[[menu.main]]
+identifier = "anthropic-mcp"
+name = "Anthropic -- Claude -- MCP"
+url = "/anthropic-mcp/"
+weight = 40
+
+[[menu.main]]
+identifier = "fun-projects"
+name = "Fun Projects!"
+url = "/Fun-Projects/"
+weight = 50
+

@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+<section class="page-list">
+  <header class="page-list-header">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Description }}
+    <p>{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if .Pages }}
+    <div class="article-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <article class="article-list-item">
+        <h2>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="article-meta">
+          {{ .Date.Format "January 2, 2006" }}
+          {{ if gt .ReadingTime 0 }}
+          · {{ .ReadingTime }} min read
+          {{ end }}
+        </div>
+
+        {{ with .Params.description }}
+        <p class="article-description">{{ . }}</p>
+        {{ else }}
+        {{ with .Summary }}
+        <p class="article-description">{{ . | plainify | truncate 180 }}</p>
+        {{ end }}
+        {{ end }}
+
+        {{ with .Params.tags }}
+        <div class="article-tags">
+          {{ range . }}
+          <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="empty-section">No posts yet.</p>
+  {{ end }}
+</section>
+
+{{ end }}

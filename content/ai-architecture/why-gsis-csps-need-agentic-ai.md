@@ -5,6 +5,8 @@ draft: false
 tags: ["AI", "MCP", "Agentic AI", "GSI", "CSP", "Partners", "Enterprise AI"]
 categories: ["AI Architecture"]
 description: "GSIs and CSPs are facing a margin crisis that Agentic AI directly solves — but most are approaching AI as a service they sell, not a tool that transforms how they operate and deliver."
+aliases:
+  - "/posts/why-gsis-csps-need-agentic-ai/"
 ---
 
 GSIs and CSPs are facing a crisis that also impacts margins that Agentic AI directly solves.
