@@ -479,3 +479,26 @@ h3 {
   color: var(--muted);
   font-size: 0.95rem;
 }
+
+/* Force clean tag layout on single post pages */
+.post-header .post-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.45rem 0.75rem !important;
+  margin-top: 0.9rem !important;
+}
+
+.post-header .post-tags a {
+  display: inline-block !important;
+  color: var(--muted) !important;
+  background: transparent !important;
+  font-size: 0.72rem !important;
+  font-weight: 650 !important;
+  letter-spacing: 0.035em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+.post-header .post-tags a:hover {
+  color: var(--accent) !important;
+}
