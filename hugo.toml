@@ -1,14 +1,14 @@
 baseURL = "https://rgk-ai.github.io/"
 languageCode = "en-us"
-title = "AI in the Enterprise - Learnings!"
+title = "Physical AI & AI Infrastructure"
 theme = "architect"
 paginate = 10
 enableRobotsTXT = true
 
 [params]
-author = "Raj"
-description = "Solutions Architect · Bridging Infrastructure, Cloud, and Agentic AI"
-tagline = "If you wish to make an apple pie from scratch , you must first invent the Universe! - Carl Sagan (Cosmos)"
+author = "RGK"
+description = "Physical AI · Robotics Infrastructure · NVIDIA AI Platforms"
+tagline = "If you wish to make an apple pie from scratch, you must first invent the Universe! - Carl Sagan (Cosmos)"
 linkedin = "https://www.linkedin.com/in/kbrajgopal"
 github = "https://github.com/rgk-ai"
 
@@ -31,35 +31,29 @@ unsafe = true
 tag = "tags"
 category = "categories"
 
+
 [menu]
 
 [[menu.main]]
-identifier = "ai-architecture"
-name = "AI Architecture"
-url = "/ai-architecture/"
+identifier = "physical-ai"
+name = "Physical AI"
+url = "/physical-ai/"
 weight = 10
 
 [[menu.main]]
-identifier = "vmware-private-ai"
-name = "VMware Private AI"
-url = "/VMware-Private-AI/"
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
 weight = 20
 
 [[menu.main]]
-identifier = "google-cloud-a2a"
-name = "Google Cloud A2A"
-url = "/Google-Cloud-A2A/"
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
 weight = 30
 
 [[menu.main]]
-identifier = "anthropic-mcp"
-name = "Anthropic -- Claude -- MCP"
-url = "/anthropic-mcp/"
+identifier = "about"
+name = "About"
+url = "/about/"
 weight = 40
-
-[[menu.main]]
-identifier = "fun-projects"
-name = "Fun Projects!"
-url = "/Fun-Projects/"
-weight = 50
-
